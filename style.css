@@ -1,0 +1,81 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: #1b1b1d;
+    color: white;
+    font-size: 1em;
+}
+
+.header{
+    background: #1b1c26;
+    width: 100%;
+    padding: 20px 0px;
+
+    position: fixed;
+    top: 0;
+    
+    border-bottom: 3px solid #9feaf9;
+    box-shadow: 0 0 25px 0 rgba(0,255,255,.333);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.header h1{
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: bold;
+    color: #9feaf9;
+    padding-left: 50px;
+}
+
+#div-email{
+    height: 40px;
+    display: flex;    
+    align-items: center;
+}
+
+.header h2{
+    font-size: 1.2em;
+    padding: 0px 50px;
+    transition: 0.3s ease;
+}
+
+.header h2:hover{    
+    color: rgb(255, 185, 56);
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 50px;    
+}
+
+#copy-sucess-message{
+    background: #028399;
+    padding: 5px;
+    border-radius: 5%; 
+    font-weight: bold;   
+    animation: cssAnimation 1.5s forwards;
+}
+
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
+
+.redes-sociais{    
+    padding-right: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header a > img {
+    width: 35px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    margin-left: 30px;
+}
+
+.header a > img:hover {
+    transform: scale(1.2);
+    filter: contrast(10);
+}
