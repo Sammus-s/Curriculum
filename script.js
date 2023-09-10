@@ -10,14 +10,26 @@ const copyEmail = async () => {
 }
 
 function copySucess(){
-    const box = document.getElementById("div-email");
+    const divEmail = document.getElementById("div-email");
     
-    if (box.childElementCount >= 2) {
-        box.removeChild(document.getElementById('copy-sucess-message'))
+    if (divEmail.childElementCount >= 2) {
+        divEmail.removeChild(document.getElementById('copy-sucess-message'))
     }
 
-    const button = document.createElement('h3');
-    button.innerText = 'Copied! ';
-    button.id = 'copy-sucess-message';
-    box.appendChild(button);  
+    const Message = document.createElement('h3');
+    Message.innerText = 'Copiado!';
+    Message.id = 'copy-sucess-message';
+    divEmail.appendChild(Message);  
 }
+
+function ajustarSectionHeigth() {
+    const sections = document.querySelectorAll('.section');
+    const HeaderHeigth = document.querySelector('.header').offsetHeight;
+
+    sections.forEach(section => {
+        section.style.height = `calc(100vh - (${HeaderHeigth}px + 3px))`;        
+    });
+}
+
+window.addEventListener('load', ajustarSectionHeigth);
+window.addEventListener('resize', ajustarSectionHeigth);
