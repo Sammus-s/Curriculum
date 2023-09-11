@@ -196,3 +196,36 @@ body{
     align-self: center;
     justify-self: center;
 }
+
+/* --------------------------------------------- */
+
+.Experiencia-content{
+    width: 45%;
+}
+
+.vaga{
+    background: #444565;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;    
+}
+
+.vaga-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.vaga-header h3{
+    font-size: 2em;
+    margin-left: 50px;
+}
+
+.vaga-header img{
+    height: 100px;
+    
+}
+
+.vaga p{
+    margin-top: 10px;
+}
